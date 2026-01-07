@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="長野県全域の空き家情報を網羅・統合したプラットフォーム。自然・眺望・ウェルビーイング・文化背景という新たな軸で不動産価値を再定義します。">
+    <title>長野県空き家ポータル | 自然と暮らすウェルビーイング</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-container">
+                <a href="#" class="logo" data-page="home">
+                    <i data-lucide="mountain-snow" class="logo-icon"></i>
+                    <span class="logo-text">長野空き家ポータル</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav-link active" data-page="home">トップ</a>
+                    <a href="#" class="nav-link" data-page="list">空き家一覧</a>
+                    <a href="#" class="nav-link" data-page="regions">エリア紹介</a>
+                    <a href="#" class="nav-link" data-page="about">ウェルビーイングとは</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="メニュー">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Content will be dynamically loaded -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3 class="footer-title">
+                            <i data-lucide="mountain-snow"></i>
+                            長野空き家ポータル
+                        </h3>
+                        <p class="footer-description">
+                            自然・眺望・ウェルビーイング・文化背景という新たな軸で<br>
+                            長野県の空き家価値を再定義します。
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">サイトマップ</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-page="home">トップページ</a></li>
+                            <li><a href="#" data-page="list">空き家一覧</a></li>
+                            <li><a href="#" data-page="regions">エリア紹介</a></li>
+                            <li><a href="#" data-page="about">ウェルビーイングとは</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">お問い合わせ</h4>
+                        <ul class="footer-links">
+                            <li><a href="mailto:info@nagano-akiya.jp">info@nagano-akiya.jp</a></li>
+                            <li>長野県長野市南長野幅下692-2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 長野県空き家ポータル. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Page Templates -->
+    <template id="home-template">
+        <!-- Home page content -->
+    </template>
+
+    <template id="list-template">
+        <!-- Property list content -->
+    </template>
+
+    <template id="detail-template">
+        <!-- Property detail content -->
+    </template>
+
+    <template id="regions-template">
+        <!-- Regions content -->
+    </template>
+
+    <template id="about-template">
+        <!-- About wellbeing content -->
+    </template>
+
+    <!-- Scripts -->
+    <script src="js/data/properties.js"></script>
+    <script src="js/data/regions.js"></script>
+    <script src="js/data/wellbeing.js"></script>
+    <script src="js/components/PropertyCard.js"></script>
+    <script src="js/components/WellbeingChart.js"></script>
+    <script src="js/components/Map.js"></script>
+    <script src="js/components/SearchFilter.js"></script>
+    <script src="js/pages/Home.js"></script>
+    <script src="js/pages/PropertyList.js"></script>
+    <script src="js/pages/PropertyDetail.js"></script>
+    <script src="js/pages/Regions.js"></script>
+    <script src="js/pages/About.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
