@@ -4,22 +4,22 @@
 
 const PROPERTIES = [
     {
-        id: 'REAL001',
-        title: 'No.472 戸隠の上楠川沿いの古民家',
+        id: '411047',
+        title: '戸隠の上楠川（かみくすがわ）沿いの古民家',
         location: {
             city: '長野市',
             district: '戸隠',
             address: '長野市戸隠270',
-            lat: 36.7206,
-            lng: 138.0662
+            lat: 36.7206511,
+            lng: 138.0662547
         },
         price: 1500000,
         priceType: 'sale',
         priceDisplay: '150万円',
         building: {
             year: 1960, // 推定
-            structure: '木造 2階建',
-            floorArea: 61.48, // 坪換算約18.6坪
+            structure: '木造',
+            floorArea: 61.48,
             landArea: 411.47,
             layout: '5K',
             floors: 2
@@ -42,17 +42,16 @@ const PROPERTIES = [
             mentalWellbeing: 96,
             lifeConvenience: 45
         },
-        tags: ['山が近い', '古民家', '静寂を楽しむ', '補修必要'],
+        tags: ['山が近い', '古民家', '静寂', '補修必要'],
         images: [
             'https://nagano-akiyabank.jp/img/bukken/9001/411047-MkMrTIkmcN.jpg',
             'https://nagano-akiyabank.jp/img/bukken/9001/411047-7668IHXeWV.jpg',
-            'https://nagano-akiyabank.jp/img/bukken/9001/411047-alOz62OuSN.jpg',
-            'https://nagano-akiyabank.jp/img/bukken/9001/411047-FNtf9TnE9j.jpg'
+            'https://nagano-akiyabank.jp/img/bukken/9001/411047-alOz62OuSN.jpg'
         ],
         source: {
             name: '長野市空き家バンク',
             url: 'https://nagano-akiyabank.jp/bukken/411047/',
-            id: '472'
+            id: '411047'
         },
         story: {
             history: '戸隠の上楠川（かみくすがわ）沿いの小さな集落に建つ物件。空き家期間が長く大規模な改修が必要ですが、その分、自分好みに再生する余地があります。',
@@ -61,117 +60,115 @@ const PROPERTIES = [
         }
     },
     {
-        id: 'REAL002',
-        title: '阿智村浪合宮の原 高原の賃貸住宅',
+        id: '367741',
+        title: '長野市大岡の築33年の別荘風住宅',
         location: {
-            city: '阿智村', // regions.jsで南信エリアに追加が必要
-            district: '浪合',
-            address: '下伊那郡阿智村浪合宮の原',
-            lat: 35.3766,
-            lng: 137.6944
+            city: '長野市',
+            district: '大岡',
+            address: '長野市大岡中牧275-83',
+            lat: 36.4849876,
+            lng: 138.0332759
         },
-        price: 25000,
-        priceType: 'rent',
-        priceDisplay: '賃料 2.5万円/月',
+        price: 2200000,
+        priceType: 'sale',
+        priceDisplay: '220万円',
         building: {
-            year: 1980, // 推定
+            year: 1991, // 築33年
             structure: '木造',
-            floorArea: 80.0, // 推定
-            landArea: 300.0, // 推定
-            layout: '4DK',
-            floors: 1
+            floorArea: 82.8,
+            landArea: 797.0,
+            layout: '3LDK',
+            floors: 2
         },
         status: {
-            vacancy: 'unused',
+            vacancy: 'short',
             repair: 'minor'
         },
         environment: {
-            altitude: 1100,
-            avgTemperature: 9.5,
-            snowfall: 100,
-            sunshineHours: 2000,
-            nearbyNature: ['高原', '星空']
+            altitude: 800,
+            avgTemperature: 10.5,
+            snowfall: 80,
+            sunshineHours: 2100,
+            nearbyNature: ['北アルプス眺望', '棚田']
         },
         wellbeing: {
-            natureConnection: 98,
-            viewValue: 95,
+            natureConnection: 94,
+            viewValue: 98,
             physicalWellbeing: 90,
-            mentalWellbeing: 94,
-            lifeConvenience: 50
+            mentalWellbeing: 95,
+            lifeConvenience: 55
         },
-        tags: ['賃貸', '高原', '日本一の星空', '避暑地'],
+        tags: ['別荘風', '北アルプス眺望', '避暑地', '状態良好'],
         images: [
-            'https://rakuen-akiya.jp/img/bukken/9043/448229-yn6pr2G7Vk.jpg',
-            'https://rakuen-akiya.jp/img/bukken/9043/448229-97g3nRPykS.jpg',
-            'https://rakuen-akiya.jp/img/bukken/9043/448229-cwfiSV8mwj.jpg',
-            'https://rakuen-akiya.jp/img/bukken/9043/448229-xIlS2NXNXH.jpg'
+            'https://nagano-akiyabank.jp/img/bukken/9001/367741-ASZadJhUjW.jpg',
+            'https://nagano-akiyabank.jp/img/bukken/9001/367741-K4o09I6E2h.jpg',
+            'https://nagano-akiyabank.jp/img/bukken/9001/367741-2yv44k390O.jpg'
         ],
         source: {
-            name: '楽園信州空き家バンク',
-            url: 'https://rakuen-akiya.jp/bukken/448229/',
-            id: '448229'
+            name: '長野市空き家バンク',
+            url: 'https://nagano-akiyabank.jp/bukken/367741/',
+            id: '367741'
         },
         story: {
-            history: '標高約1,100mの高原に位置する賃貸物件。夏はエアコンがいらないほど涼しく、快適に過ごせます。',
-            culture: '阿智村は「日本一の星空」で有名な場所。夜には満天の星空が広がり、宇宙とのつながりを感じられる特別な場所です。',
-            ideas: ['避暑地ステイ', '星空観賞拠点', 'お試し移住']
+            history: '長野市大岡地区、聖山の麓に位置する別荘風の住宅。築33年で比較的新しく、夏の涼しさは格別です。',
+            culture: '大岡地区は北アルプスの展望や美しい棚田で知られる地域。「日本の原風景」とも言える景観が広がっています。',
+            ideas: ['週末移住', 'ワーケーション拠点', '創作活動']
         }
     },
     {
-        id: 'REAL003',
-        title: '木曽町開田高原 御嶽山を望む店舗物件',
+        id: '418879',
+        title: '戸隠南部 追通地区ののどかな古民家',
         location: {
-            city: '木曽町',
-            district: '開田高原',
-            address: '木曽郡木曽町開田高原西野',
-            lat: 35.9654,
-            lng: 137.5760
+            city: '長野市',
+            district: '戸隠',
+            address: '長野市戸隠栃原8737',
+            lat: 36.67487,
+            lng: 138.0550636
         },
-        price: 20000,
-        priceType: 'rent',
-        priceDisplay: '賃料 2万円/月',
+        price: 2500000,
+        priceType: 'sale',
+        priceDisplay: '250万円',
         building: {
-            year: 2003,
-            structure: '軽量鉄骨造',
-            floorArea: 135.53,
-            landArea: 0, // 記載なし
-            layout: '店舗',
-            floors: 1
+            year: 1950, // 推定
+            structure: '木造',
+            floorArea: 125.95,
+            landArea: 419.52,
+            layout: '4K',
+            floors: 2
         },
         status: {
-            vacancy: 'unused',
+            vacancy: 'medium',
             repair: 'minor'
         },
         environment: {
-            altitude: 1200,
-            avgTemperature: 8.5,
+            altitude: 900,
+            avgTemperature: 9.8,
             snowfall: 150,
             sunshineHours: 1800,
-            nearbyNature: ['御嶽山', '高原']
+            nearbyNature: ['山', '川']
         },
         wellbeing: {
             natureConnection: 92,
-            viewValue: 98,
-            physicalWellbeing: 85,
-            mentalWellbeing: 92,
+            viewValue: 85,
+            physicalWellbeing: 88,
+            mentalWellbeing: 90,
             lifeConvenience: 60
         },
-        tags: ['貸店舗', '御嶽山眺望', '高原', '事業用'],
+        tags: ['家庭菜園', '山が見える', '静かな環境', '農的暮らし'],
         images: [
-            'https://rakuen-akiya.jp/img/bukken/9058/401164-Z647wz5hdT.png',
-            'https://rakuen-akiya.jp/img/bukken/9058/401164-vBTpdgwGgV.jpg',
-            'https://rakuen-akiya.jp/img/bukken/9058/401164-0KvNIpsBH2.jpg',
-            'https://rakuen-akiya.jp/img/bukken/9058/401164-y2WpK0bcP8.jpg'
+            'https://nagano-akiyabank.jp/img/bukken/9001/418879-6O1FPlpz47.jpg',
+            'https://nagano-akiyabank.jp/img/bukken/9001/418879-L6fJb5qN6V.jpg',
+            'https://nagano-akiyabank.jp/img/bukken/9001/418879-4L896j1d9O.jpg'
         ],
         source: {
-            name: '楽園信州空き家バンク',
-            url: 'https://rakuen-akiya.jp/bukken/401164/',
-            id: '401164'
+            name: '長野市空き家バンク',
+            url: 'https://nagano-akiyabank.jp/bukken/418879/',
+            id: '418879'
         },
         story: {
-            history: '開田高原の豊かな自然の中に建つ店舗物件。庭からは雄大な御嶽山を望むことができます。',
-            culture: '開田高原は木曽馬の里としても知られ、冷涼な気候を活かした蕎麦の栽培が盛ん。「開田そば」は地域の特産品です。',
-            ideas: ['カフェ', 'ギャラリー', '高原野菜直売所']
+            history: '戸隠南部を流れる裾花川流域の追通（おっかよう）地区に建つ古民家。山に囲まれたのどかな環境です。',
+            culture: '静かな山村の生活が残る地域。家庭菜園や畑を楽しむことができ、土と共に生きる暮らしが実現できます。',
+            ideas: ['自給自足', 'ファミリー移住', '田舎暮らし']
         }
     },
     {
@@ -306,20 +303,23 @@ function formatPrice(price, type) {
     return `${price.toLocaleString()}円`;
 }
 
-function getStatusLabel(status) {
+function getVacancyLabel(value) {
     const labels = {
-        vacancy: {
-            'short': '空き期間 短',
-            'longterm': '空き期間 長',
-            'unused': '未入居'
-        },
-        repair: {
-            'ready': '即入居可',
-            'minor': '多少の補修要',
-            'major': '大規模修繕要'
-        }
+        'short': '空き期間 短',
+        'longterm': '空き期間 長',
+        'unused': '未入居',
+        'medium': '空き期間 中'
     };
-    return labels[status.type]?.[status.value] || status.value;
+    return labels[value] || value;
+}
+
+function getRepairLabel(value) {
+    const labels = {
+        'ready': '即入居可',
+        'minor': '多少の補修要',
+        'major': '大規模修繕要'
+    };
+    return labels[value] || value;
 }
 
 function calculateWellbeingScore(wellbeing) {
@@ -342,4 +342,29 @@ function filterProperties(filters) {
         if (filters.nature && !p.environment.nearbyNature.includes(filters.nature)) return false;
         return true;
     });
+}
+
+function getPropertyById(id) {
+    // Determine if id is string or potentially number, though properties use strings/numbers mixed in original?
+    // My new ones are strings '411047'. The mock ones were 'REAL004' (string) or maybe numbers in previous versions?
+    // In the file I read, they are all strings e.g. '411047' or 'REAL004'.
+    return PROPERTIES.find(p => p.id === String(id));
+}
+
+function sortProperties(properties, sortKey) {
+    const sorted = [...properties];
+    switch (sortKey) {
+        case 'price-asc':
+            return sorted.sort((a, b) => a.price - b.price);
+        case 'price-desc':
+            return sorted.sort((a, b) => b.price - a.price);
+        case 'score-desc':
+        case 'wellbeing-desc':
+            return sorted.sort((a, b) => calculateWellbeingScore(b.wellbeing) - calculateWellbeingScore(a.wellbeing));
+        case 'altitude-desc':
+            return sorted.sort((a, b) => b.environment.altitude - a.environment.altitude);
+        case 'newest':
+        default:
+            return sorted;
+    }
 }

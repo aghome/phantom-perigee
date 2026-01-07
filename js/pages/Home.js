@@ -236,9 +236,10 @@ function renderHomePage() {
         addPropertyMarkers(PROPERTIES);
     }, 100);
 
-    // Render featured properties (top 6 by wellbeing score)
+    // Render featured properties (Show top 3 latest/featured properties)
     const featuredContainer = document.getElementById('featured-properties');
-    const topProperties = sortProperties(PROPERTIES, 'wellbeing-desc').slice(0, 6);
+    // Using the first 3 properties as they represent the "latest" real data we added
+    const topProperties = PROPERTIES.slice(0, 3);
     renderPropertyGrid(featuredContainer, topProperties);
 }
 

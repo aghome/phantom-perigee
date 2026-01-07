@@ -10,27 +10,27 @@
     --color-forest: #1a4d2e;
     --color-forest-light: #2d6a4f;
     --color-forest-dark: #0f2d1a;
-    
+
     --color-mountain: #4a6fa5;
     --color-mountain-light: #6b8cbe;
     --color-mountain-dark: #345280;
-    
+
     --color-sky: #87ceeb;
     --color-sky-light: #b0e0f6;
     --color-sky-dark: #5eb5db;
-    
+
     --color-snow: #f8f9fa;
     --color-snow-pure: #ffffff;
     --color-snow-dim: #e9ecef;
-    
+
     --color-earth: #8b7355;
     --color-earth-light: #a89076;
     --color-earth-dark: #6b5642;
-    
+
     --color-sunset: #e07b53;
     --color-sunset-light: #f09a78;
     --color-sunset-dark: #c45d36;
-    
+
     /* Neutral Colors */
     --color-gray-50: #f9fafb;
     --color-gray-100: #f3f4f6;
@@ -42,37 +42,37 @@
     --color-gray-700: #374151;
     --color-gray-800: #1f2937;
     --color-gray-900: #111827;
-    
+
     /* Semantic Colors */
     --color-primary: var(--color-forest);
     --color-primary-light: var(--color-forest-light);
     --color-primary-dark: var(--color-forest-dark);
-    
+
     --color-secondary: var(--color-mountain);
     --color-accent: var(--color-sunset);
-    
+
     --color-success: #10b981;
     --color-warning: #f59e0b;
     --color-error: #ef4444;
     --color-info: var(--color-sky);
-    
+
     /* Background Colors */
     --bg-primary: var(--color-snow);
     --bg-secondary: var(--color-gray-50);
     --bg-dark: var(--color-gray-900);
     --bg-glass: rgba(255, 255, 255, 0.75);
     --bg-glass-dark: rgba(0, 0, 0, 0.5);
-    
+
     /* Text Colors */
     --text-primary: var(--color-gray-900);
     --text-secondary: var(--color-gray-600);
     --text-muted: var(--color-gray-400);
     --text-inverse: var(--color-snow);
-    
+
     /* Typography */
     --font-sans: 'Noto Sans JP', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-display: 'Outfit', 'Noto Sans JP', sans-serif;
-    
+
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
     --text-base: 1rem;
@@ -83,17 +83,17 @@
     --text-4xl: 2.25rem;
     --text-5xl: 3rem;
     --text-6xl: 3.75rem;
-    
+
     --font-light: 300;
     --font-normal: 400;
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
-    
+
     --leading-tight: 1.25;
     --leading-normal: 1.5;
     --leading-relaxed: 1.75;
-    
+
     /* Spacing */
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -108,7 +108,7 @@
     --space-20: 5rem;
     --space-24: 6rem;
     --space-32: 8rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.25rem;
     --radius-md: 0.5rem;
@@ -117,7 +117,7 @@
     --radius-2xl: 1.5rem;
     --radius-3xl: 2rem;
     --radius-full: 9999px;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -125,13 +125,13 @@
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     --shadow-glow: 0 0 40px rgba(26, 77, 46, 0.15);
-    
+
     /* Transitions */
     --transition-fast: 150ms ease;
     --transition-normal: 300ms ease;
     --transition-slow: 500ms ease;
     --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
-    
+
     /* Z-index Scale */
     --z-dropdown: 100;
     --z-sticky: 200;
@@ -139,7 +139,7 @@
     --z-modal-backdrop: 400;
     --z-modal: 500;
     --z-tooltip: 600;
-    
+
     /* Container */
     --container-sm: 640px;
     --container-md: 768px;
@@ -151,7 +151,9 @@
 /* ============================================
    CSS Reset & Base Styles
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -174,7 +176,8 @@ body {
     min-height: 100vh;
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
     display: block;
@@ -193,11 +196,14 @@ button {
     background: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     font-family: inherit;
     font-size: inherit;
 }
@@ -557,12 +563,10 @@ input, textarea, select {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.1) 40%,
-        rgba(0, 0, 0, 0.4) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.4) 100%);
 }
 
 .hero-content {
@@ -655,12 +659,19 @@ input, textarea, select {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     40% {
         transform: translateX(-50%) translateY(-10px);
     }
+
     60% {
         transform: translateX(-50%) translateY(-5px);
     }
@@ -1182,12 +1193,12 @@ input, textarea, select {
     transition: all var(--transition-fast);
 }
 
-.filter-option input:checked + .filter-checkbox {
+.filter-option input:checked+.filter-checkbox {
     background: var(--color-primary);
     border-color: var(--color-primary);
 }
 
-.filter-option input:checked + .filter-checkbox::after {
+.filter-option input:checked+.filter-checkbox::after {
     content: '✓';
     color: white;
     font-size: 12px;
@@ -1930,6 +1941,7 @@ input, textarea, select {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1940,6 +1952,7 @@ input, textarea, select {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1951,6 +1964,7 @@ input, textarea, select {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1970,20 +1984,46 @@ input, textarea, select {
 }
 
 /* Stagger animation for lists */
-.stagger-animation > * {
+.stagger-animation>* {
     opacity: 0;
     animation: slideUp 0.5s ease-out forwards;
 }
 
-.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-animation > *:nth-child(2) { animation-delay: 0.15s; }
-.stagger-animation > *:nth-child(3) { animation-delay: 0.2s; }
-.stagger-animation > *:nth-child(4) { animation-delay: 0.25s; }
-.stagger-animation > *:nth-child(5) { animation-delay: 0.3s; }
-.stagger-animation > *:nth-child(6) { animation-delay: 0.35s; }
-.stagger-animation > *:nth-child(7) { animation-delay: 0.4s; }
-.stagger-animation > *:nth-child(8) { animation-delay: 0.45s; }
-.stagger-animation > *:nth-child(9) { animation-delay: 0.5s; }
+.stagger-animation>*:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stagger-animation>*:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.stagger-animation>*:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.stagger-animation>*:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.stagger-animation>*:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+.stagger-animation>*:nth-child(6) {
+    animation-delay: 0.35s;
+}
+
+.stagger-animation>*:nth-child(7) {
+    animation-delay: 0.4s;
+}
+
+.stagger-animation>*:nth-child(8) {
+    animation-delay: 0.45s;
+}
+
+.stagger-animation>*:nth-child(9) {
+    animation-delay: 0.5s;
+}
 
 /* ============================================
    Responsive Adjustments
@@ -1992,15 +2032,15 @@ input, textarea, select {
     .hero-title {
         font-size: var(--text-3xl);
     }
-    
+
     .section-title {
         font-size: var(--text-2xl);
     }
-    
+
     .detail-hero {
         height: 50vh;
     }
-    
+
     .detail-hero-title {
         font-size: var(--text-2xl);
     }
